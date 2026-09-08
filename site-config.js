@@ -3,67 +3,111 @@ window.FORM_CONFIG = {
   "repo": "newyorkera_form",
   "product": "newyorkera",
   "sourceForm": "newyorkera.html",
-  "context": "New York birthday archive",
-  "motif": "●",
-  "media": "8 foto photobooth",
+  "context": "cinematic new york birthday interactive city archive",
+  "motif": "★",
+  "media": "8 foto polaroid + 1 file musik MP3",
   "theme": "newyork",
+  "palette": [
+    "#1F1E1B",
+    "#E8A838",
+    "#2E3B2F",
+    "#F7F5EE",
+    "#8A8578",
+    "#D9534F"
+  ],
+  "price": 25000,
   "sections": [
     {
       "id": "02",
-      "title": "transit identity & destination",
+      "title": "opening & city identity",
       "fields": [
         {
           "key": "recipient_name",
-          "label": "nama birthday girl / boy",
-          "placeholder": "isi nama birthday girl / boy sesuai pesanan",
+          "label": "nama yang berulang tahun (recipient)",
+          "placeholder": "default: stellnyang",
           "long": false,
           "required": false
         },
         {
           "key": "sender_name",
-          "label": "nama pengirim",
-          "placeholder": "isi nama pengirim sesuai pesanan",
+          "label": "nama pengirim / pembuat archive",
+          "placeholder": "default: cattia",
           "long": false,
           "required": false
         },
         {
           "key": "birthday_date",
-          "label": "tanggal perayaan ulang tahun",
-          "placeholder": "isi tanggal perayaan ulang tahun sesuai pesanan",
+          "label": "tanggal ulang tahun (birthday date)",
+          "placeholder": "default: june 18, 2026",
           "long": false,
           "required": false
         },
         {
-          "key": "hero_quote",
-          "label": "quote pembuka tiket subway",
-          "placeholder": "isi quote pembuka tiket subway sesuai pesanan",
-          "long": false,
+          "key": "opening_quote",
+          "label": "opening quote / sapaan pembuka",
+          "placeholder": "default: happy 19th birthday, stellnyang. cattia made this little new york archive just for you.",
+          "long": true,
           "required": false
         }
       ]
     },
     {
       "id": "03",
-      "title": "stop 1 — subway station (arrival memories)",
+      "title": "station 01 — subway arrival memories (4 lines)",
       "fields": [
         {
-          "key": "line_a_text",
-          "label": "line A (arrival memory 1)",
-          "placeholder": "isi line a (arrival memory 1) sesuai pesanan",
+          "key": "subway_1_title",
+          "label": "line A (00:11) · judul",
+          "placeholder": "default: happy 19th birthday, stellnyang",
+          "long": false,
+          "required": false
+        },
+        {
+          "key": "subway_1_text",
+          "label": "line A · isi memori",
+          "placeholder": "default: on june 18, 2026, this whole little city archive is here to say: happy 19th birthday, stellnyang.",
           "long": true,
           "required": false
         },
         {
-          "key": "line_c_text",
-          "label": "line C (arrival memory 2)",
-          "placeholder": "isi line c (arrival memory 2) sesuai pesanan",
+          "key": "subway_2_title",
+          "label": "line C (00:27) · judul",
+          "placeholder": "default: from cattia, with the softest wish",
+          "long": false,
+          "required": false
+        },
+        {
+          "key": "subway_2_text",
+          "label": "line C · isi memori",
+          "placeholder": "default: cattia bought this website so your birthday would have its own street sign, subway stop, and tiny piece of the internet.",
           "long": true,
           "required": false
         },
         {
-          "key": "line_e_text",
-          "label": "line E (arrival memory 3)",
-          "placeholder": "isi line e (arrival memory 3) sesuai pesanan",
+          "key": "subway_3_title",
+          "label": "line M (01:03) · judul",
+          "placeholder": "default: nineteen looks good on you",
+          "long": false,
+          "required": false
+        },
+        {
+          "key": "subway_3_text",
+          "label": "line M · isi memori",
+          "placeholder": "default: nineteen is a whole new downtown route. i hope every stop this year gives you something sweet to remember.",
+          "long": true,
+          "required": false
+        },
+        {
+          "key": "subway_4_title",
+          "label": "line F (01:44) · judul",
+          "placeholder": "default: birthday candles in the city",
+          "long": false,
+          "required": false
+        },
+        {
+          "key": "subway_4_text",
+          "label": "line F · isi memori",
+          "placeholder": "default: if this archive could hold real candles, cattia would light nineteen of them for you right here.",
           "long": true,
           "required": false
         }
@@ -71,33 +115,47 @@ window.FORM_CONFIG = {
     },
     {
       "id": "04",
-      "title": "stop 2 — sidewalk chalk notes",
+      "title": "station 02 — sidewalk chalk notes (6 hidden messages)",
       "fields": [
         {
-          "key": "chalk_1",
-          "label": "chalk note 1 (lafayette street)",
-          "placeholder": "isi chalk note 1 (lafayette street) sesuai pesanan",
+          "key": "sidewalk_1",
+          "label": "chalk note 1",
+          "placeholder": "default: happy 19th birthday, stellnyang.",
           "long": false,
           "required": false
         },
         {
-          "key": "chalk_2",
-          "label": "chalk note 2 (spring street)",
-          "placeholder": "isi chalk note 2 (spring street) sesuai pesanan",
+          "key": "sidewalk_2",
+          "label": "chalk note 2",
+          "placeholder": "default: june 18 belongs to you.",
           "long": false,
           "required": false
         },
         {
-          "key": "chalk_3",
-          "label": "chalk note 3 (bleecker street)",
-          "placeholder": "isi chalk note 3 (bleecker street) sesuai pesanan",
+          "key": "sidewalk_3",
+          "label": "chalk note 3",
+          "placeholder": "default: cattia made this little city for your birthday.",
           "long": false,
           "required": false
         },
         {
-          "key": "chalk_4",
-          "label": "chalk note 4 (houston street)",
-          "placeholder": "isi chalk note 4 (houston street) sesuai pesanan",
+          "key": "sidewalk_4",
+          "label": "chalk note 4",
+          "placeholder": "default: nineteen candles, one favorite person.",
+          "long": false,
+          "required": false
+        },
+        {
+          "key": "sidewalk_5",
+          "label": "chalk note 5",
+          "placeholder": "default: may this year be soft, loud, pretty, and yours.",
+          "long": false,
+          "required": false
+        },
+        {
+          "key": "sidewalk_6",
+          "label": "chalk note 6",
+          "placeholder": "default: stellnyang, you are so loved today.",
           "long": false,
           "required": false
         }
@@ -105,61 +163,61 @@ window.FORM_CONFIG = {
     },
     {
       "id": "05",
-      "title": "stop 3 — photo booth near 2nd ave (8 polaroids)",
+      "title": "station 03 — photo booth (8 polaroids)",
       "fields": [
         {
-          "key": "booth_cap1",
-          "label": "polaroid 1 caption",
-          "placeholder": "isi polaroid 1 caption sesuai pesanan",
+          "key": "photo_1",
+          "label": "polaroid 1 · caption & time tag",
+          "placeholder": "default: soft city girl energy. (sunset block)",
           "long": false,
           "required": false
         },
         {
-          "key": "booth_cap2",
-          "label": "polaroid 2 caption",
-          "placeholder": "isi polaroid 2 caption sesuai pesanan",
+          "key": "photo_2",
+          "label": "polaroid 2 · caption & time tag",
+          "placeholder": "default: scarf, glasses, main character. (nyc sidewalk)",
           "long": false,
           "required": false
         },
         {
-          "key": "booth_cap3",
-          "label": "polaroid 3 caption",
-          "placeholder": "isi polaroid 3 caption sesuai pesanan",
+          "key": "photo_3",
+          "label": "polaroid 3 · caption & time tag",
+          "placeholder": "default: superhero backdrop moment. (brick wall)",
           "long": false,
           "required": false
         },
         {
-          "key": "booth_cap4",
-          "label": "polaroid 4 caption",
-          "placeholder": "isi polaroid 4 caption sesuai pesanan",
+          "key": "photo_4",
+          "label": "polaroid 4 · caption & time tag",
+          "placeholder": "default: matcha and mirror phone. (after school cafe)",
           "long": false,
           "required": false
         },
         {
-          "key": "booth_cap5",
-          "label": "polaroid 5 caption",
-          "placeholder": "isi polaroid 5 caption sesuai pesanan",
+          "key": "photo_5",
+          "label": "polaroid 5 · caption & time tag",
+          "placeholder": "default: forever young coded. (sleepover flash)",
           "long": false,
           "required": false
         },
         {
-          "key": "booth_cap6",
-          "label": "polaroid 6 caption",
-          "placeholder": "isi polaroid 6 caption sesuai pesanan",
+          "key": "photo_6",
+          "label": "polaroid 6 · caption & time tag",
+          "placeholder": "default: quiet pretty archive. (late night room)",
           "long": false,
           "required": false
         },
         {
-          "key": "booth_cap7",
-          "label": "polaroid 7 caption",
-          "placeholder": "isi polaroid 7 caption sesuai pesanan",
+          "key": "photo_7",
+          "label": "polaroid 7 · caption & time tag",
+          "placeholder": "default: red star sweetheart. (window view)",
           "long": false,
           "required": false
         },
         {
-          "key": "booth_cap8",
-          "label": "polaroid 8 caption",
-          "placeholder": "isi polaroid 8 caption sesuai pesanan",
+          "key": "photo_8",
+          "label": "polaroid 8 · caption & time tag",
+          "placeholder": "default: teen movie opening shot. (night blur)",
           "long": false,
           "required": false
         }
@@ -167,93 +225,105 @@ window.FORM_CONFIG = {
     },
     {
       "id": "06",
-      "title": "stop 4 — midnight diner menu (confessions)",
+      "title": "station 04 — midnight diner menu (5 items & messages)",
       "fields": [
         {
           "key": "diner_1",
-          "label": "menu item 1 confession (cherry pie)",
-          "placeholder": "isi menu item 1 confession (cherry pie) sesuai pesanan",
-          "long": false,
+          "label": "item 1 (birthday pancakes · $6.18)",
+          "placeholder": "default: happy 19th birthday, stellnyang. cattia hopes your day feels sweet from the first bite.",
+          "long": true,
           "required": false
         },
         {
           "key": "diner_2",
-          "label": "menu item 2 confession (black coffee)",
-          "placeholder": "isi menu item 2 confession (black coffee) sesuai pesanan",
-          "long": false,
+          "label": "item 2 (deli iced tea · $1.90)",
+          "placeholder": "default: nineteen looks like a new route, a better song, and a city that saves its lights for you.",
+          "long": true,
           "required": false
         },
         {
           "key": "diner_3",
-          "label": "menu item 3 confession (french toast)",
-          "placeholder": "isi menu item 3 confession (french toast) sesuai pesanan",
-          "long": false,
+          "label": "item 3 (fries for the table · $4.40)",
+          "placeholder": "default: this website exists because cattia wanted your birthday message to feel special, not ordinary.",
+          "long": true,
           "required": false
         },
         {
           "key": "diner_4",
-          "label": "menu item 4 confession (hot chocolate)",
-          "placeholder": "isi menu item 4 confession (hot chocolate) sesuai pesanan",
-          "long": false,
+          "label": "item 4 (pink milkshake · $6.06)",
+          "placeholder": "default: may june 18, 2026 feel glittery, easy, loved, and very stellnyang.",
+          "long": true,
+          "required": false
+        },
+        {
+          "key": "diner_5",
+          "label": "item 5 (nineteen candles · $0.19)",
+          "placeholder": "default: make a wish. this whole little new york birthday archive is listening.",
+          "long": true,
           "required": false
         }
       ]
     },
     {
       "id": "07",
-      "title": "stop 5 — rooftop constellations (night wishes)",
+      "title": "station 05 — rooftop wishes (5 constellations)",
       "fields": [
         {
-          "key": "star_1",
-          "label": "star wish 1",
-          "placeholder": "isi star wish 1 sesuai pesanan",
-          "long": false,
+          "key": "wish_1",
+          "label": "wish 1 (star 1)",
+          "placeholder": "default: for your 19th year, i hope life gives you more reasons to smile than you can archive.",
+          "long": true,
           "required": false
         },
         {
-          "key": "star_2",
-          "label": "star wish 2",
-          "placeholder": "isi star wish 2 sesuai pesanan",
-          "long": false,
+          "key": "wish_2",
+          "label": "wish 2 (star 2)",
+          "placeholder": "default: i hope june 18, 2026 becomes one of those days you remember softly.",
+          "long": true,
           "required": false
         },
         {
-          "key": "star_3",
-          "label": "star wish 3",
-          "placeholder": "isi star wish 3 sesuai pesanan",
-          "long": false,
+          "key": "wish_3",
+          "label": "wish 3 (star 3)",
+          "placeholder": "default: i hope nineteen brings you confidence, cute chaos, good photos, and people who choose you loudly.",
+          "long": true,
+          "required": false
+        },
+        {
+          "key": "wish_4",
+          "label": "wish 4 (star 4)",
+          "placeholder": "default: i hope every wish you make today finds its way to you this year.",
+          "long": true,
+          "required": false
+        },
+        {
+          "key": "wish_5",
+          "label": "wish 5 (star 5)",
+          "placeholder": "default: i hope you can feel cattia's birthday love in every small detail of this website.",
+          "long": true,
           "required": false
         }
       ]
     },
     {
       "id": "08",
-      "title": "stop 6 — final train letter",
+      "title": "station 06 — final train (the love letter)",
       "fields": [
         {
-          "key": "train_letter",
-          "label": "surat gerbong terakhir (pesan ulang tahun lengkap)",
-          "placeholder": "isi surat gerbong terakhir (pesan ulang tahun lengkap) sesuai pesanan",
+          "key": "final_letter",
+          "label": "isi surat lengkap di dalam gerbong kereta terakhir",
+          "placeholder": "default: happy 19th birthday, stellnyang. today is june 18, 2026, and cattia made this website as a little birthday city for you...",
           "long": true,
           "required": false
         },
         {
-          "key": "train_sign",
-          "label": "tanda tangan pengirim",
-          "placeholder": "isi tanda tangan pengirim sesuai pesanan",
+          "key": "letter_sign",
+          "label": "tanda tangan penutup surat",
+          "placeholder": "default: with love, cattia",
           "long": false,
           "required": false
         }
       ]
     }
-  ],
-  "palette": [
-    "#272323",
-    "#161313",
-    "#f4eadc",
-    "#b23b52",
-    "#ffd33d",
-    "#fff8ee"
-  ],
-  "price": 20000
+  ]
 };
